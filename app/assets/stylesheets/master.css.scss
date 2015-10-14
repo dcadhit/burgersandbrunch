@@ -5,8 +5,14 @@ body {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
-.navbar.navbar-inverse {
+.navbar-inverse .navbar {
 	border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #E3E85A;
+	font-family: 'amaticbold', 'amatic_scregular' sans-serif;
+	font-size: 28px;
 }
 
 .booyah-box {
