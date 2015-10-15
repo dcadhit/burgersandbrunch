@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use will_paginate
 gem 'will_paginate-bootstrap'
@@ -31,8 +31,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 #Add Twitter Bootstrap sass
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '~> 3.3.5.1'
 
+gem 'sprockets', '2.11.0'
 #Add Simple form
 gem 'simple_form'
 
