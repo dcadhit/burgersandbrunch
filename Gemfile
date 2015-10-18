@@ -34,8 +34,15 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 
 gem 'sprockets', '2.11.0'
+
 #Add Simple form
 gem 'simple_form'
+
+#Add Geocoder
+gem 'geocoder'
+
+#Add Figaro
+gem 'figaro', '>= 1.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
