@@ -55,6 +55,8 @@ gem 'devise', '>= 3.2.4'
 gem 'carrierwave', '>= 0.10.0'
 gem 'mini_magick', '>=3.7.0'
 
+#Add Fog gem
+gem 'fog', '~> 1.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
