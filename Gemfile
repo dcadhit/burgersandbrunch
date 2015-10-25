@@ -52,7 +52,8 @@ end
 gem 'devise', '>= 3.2.4'
 
 #Add carrierwave for photo upload
-gem 'carrierwave'
+gem 'carrierwave', '>= 0.10.0'
+gem 'mini_magick', '>=3.7.0'
 
 
 # Use ActiveModel has_secure_password
