@@ -1,14 +1,11 @@
 <% @places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
-    <i><%= place.address %></i><br /><br />
-    <p><%= place.description %></p><br />
-
-<% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
-    <% if place.comments.present? %>
-	<div class="col-xs-12">
+    <h1><%= link_to place.name, place_path(place) %></h1>
+		    <i><%= place.address %></i><br />
+			<span class="pull-left"><%= place.description %></span>
+		    <br /><br />
+        <% if place.comments.present? %>
+	<div class="col-xs-6">
 	  <blockquote>
 	    <% if place.comments.last.humanized_rating.present? %>
 	      <b><%= place.comments.last.humanized_rating %></b> -
@@ -18,8 +15,18 @@
 	  </blockquote>
 	</div>
 	<% end %>
+         <div class="col-xs-4 pull-right">
+    		<% if place.photos.last.present? %>
+      			<%=image_tag place.photos.last.picture, :class => 'img-responsive' %> <!-- Follow up -->
+       		<% end %>
+       	</div>
+    <span class="clearfix"></span>
+	<% if place.user.present? %>
+ 		<small><%= place.user.email %></small>
+	<% end %>
 </div>
 
 <% end %>
+
 <div class="clearfix"></div>
 <%= will_paginate @places, renderer: BootstrapPagination::Rails %>
